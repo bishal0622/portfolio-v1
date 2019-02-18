@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Gradient backgrounds - fullPage.js</title>
+
+    <link rel="stylesheet" type="text/css" href=".https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:700" rel="stylesheet">
+
+    <style>
+    @font-face {
+        font-family: Aloja;
+        src: url(/Casablanca-Noir.ttf);
+        font-weight: bold;
+    }
+
+        /* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+        font-family: 'Aloja', cursive;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background: -webkit-gradient(linear, top left, bottom left, from(#EB3349), to(#93F9B9));
+		background: -webkit-linear-gradient(#EB3349, #FF512F);
+		background: linear-gradient(#EB3349,#FF512F);
+	}
+
+    body{
+        margin: 0px;
+    }
+    
+    #fullpage{
+        width: 100%;
+    }
+
+    #section0 h1{
+        padding-top: 8%;
+    }
+
+    #section0 img{
+        height: 35%;
+        margin-top: 15%;
+    }
+    img:hover{
+        transform: scale(1,1);
+        transition:1s;
+    }
+    img{
+        transform: scale(1.5,1.5);
+        transition: .3s;
+    }
+	</style>
+
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <img src="m.png" alt="">
+            <h1 style="text-shadow: 2px 2px 8px #FF0000;">MANCHESTER UNITED</h1>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.min.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage');
+    </script>
+</body>
+
+</html>
